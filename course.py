@@ -6,8 +6,8 @@ import winsound
 import time
  
  ###要偵測的課名&老師名
-class_name = "東南亞華人史"
-professor_name = "李貴民"
+class_name = ""
+professor_name = ""
 ###每隔幾秒刷新
 renew_time = 5
 
@@ -45,6 +45,7 @@ try:
 except:
     print("course not found")
     chrome.quit()
+    exit()
 winsound.Beep(400,1000)
 while True:
     time.sleep(renew_time)
